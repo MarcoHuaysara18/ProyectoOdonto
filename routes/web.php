@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Admin\HomeController; 
+use App\Http\Controllers\OdontogramController; 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+/* Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');  */
+
+Route::middleware(['auth:sanctum', 'verified'])->get('',[HomeController::class,'index']);
+Route::get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+
+Route::get('/odontogram/index',[OdontogramController::class,'index']); 
+/* Route::get('',[HomeController::class,'index']); */

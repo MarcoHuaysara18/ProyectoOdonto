@@ -45,7 +45,7 @@ return [
     |
     */
 
-    'logo' => '<b>Admin</b>LTE',
+    'logo' => '<b>Dental</b>COES',
     'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
@@ -245,6 +245,31 @@ return [
             'text' => 'blog',
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
+        ],
+        [
+            'text' => 'Dashboard',
+            'route'  => 'dashboard',
+            'icon'        => 'fas fa-tachometer-alt',
+        ],
+        [
+            'text' => 'Odontograma',
+            'url'  => 'odontogram/index',
+            'icon'        => 'fas fa-tachometer-alt',
+        ],
+        [
+            'text' => 'Registro',
+            'route'  => 'dashboard',
+            'icon'        => 'fas fa-tachometer-alt',
+        ],
+        [
+            'text' => 'Citas',
+            'route'  => 'dashboard',
+            'icon'        => 'fas fa-tachometer-alt',
+        ],
+        [
+            'text' => 'Historia Clinica',
+            'route'  => 'dashboard',
+            'icon'        => 'fas fa-tachometer-alt',
         ],
         [
             'text'        => 'pages',
